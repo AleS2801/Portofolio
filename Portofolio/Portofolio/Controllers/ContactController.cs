@@ -9,11 +9,11 @@ using Portofolio.Models;
 
 namespace Portofolio.Controllers
 {
-    public class HomeController : Controller
+    public class ContactController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<ContactController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public ContactController(ILogger<ContactController> logger)
         {
             _logger = logger;
         }
@@ -24,11 +24,6 @@ namespace Portofolio.Controllers
         }
 
         public IActionResult Privacy()
-        {
-            return View();
-        }
-        
-        public IActionResult Latest()
         {
             return View();
         }

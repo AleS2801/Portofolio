@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Portofolio</title>
+    <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
-<body style="background-image: url(images/HelloBackground.png" )>
-    <header>
-        <!-- style="background-image: url(images/NavBar.png)"   PENTRU CAND DAI PE SAGEATA IN JOS - PENTRU NAV BAR-->
+<body >
+    <header style="background-image: url(images/NavBar.png)">
+        <!--style="background-image: url(images/HelloBackground.png)" FULL PAGE-->
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"></a>
@@ -20,21 +20,21 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-white " id="nav_btns" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <!--
+                    <li class="nav-item">
+                              <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                    </li>
+                    -->
                         <li class="nav-item">
-                                  <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="About" asp-action="Index">About</a>
                         </li>
-                        -->
                         <li class="nav-item">
-                            <a class="nav-link text-white" id="nav_btns" asp-area="" asp-controller="About" asp-action="Index">About</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Contact" asp-action="Index">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" id="nav_btns" asp-area="" asp-controller="Contact" asp-action="Index">Contact</a>
-                        </li> 
-                        <li class="nav-item">
-                            <a class="nav-link text-white" id="nav_btns" asp-area="" asp-controller="Projects" asp-action="Index">Projects</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Projects" asp-action="Index">Projects</a>
                         </li>
                         <li class="nav-item" style="position:absolute; left: 85%;">
                             <a id="btn_SignIn_color" class="btn_SignIn nav-link" asp-area="" asp-controller="Login" asp-action="Index">&nbsp; Sign in &nbsp;</a>

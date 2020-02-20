@@ -1,8 +1,13 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center HelloPage">
+    <br />
+    <h1 class="display-4" style="font-weight: 500; opacity: 0.9;">HELLO!</h1><br />
+    <p style="font-size: 21px; opacity: 0.9;">
+        Welcome! My name is [your name]. I’m [age] years old. <br />
+        Just to know me better: [a short description here].
+    </p>
 </div>
+
+<a asp-controller="Home" asp-action="Latest"><img id="HomeArrow" src="~/images/HelloArrow.png" /></a>
